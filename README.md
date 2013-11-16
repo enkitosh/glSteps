@@ -31,20 +31,36 @@ now you can step through transformations with stepM
 
 see testSteps.c
 
-Example
+Example:
 
-    //1 ====Logging====
-    stepM(matrixf, "glLoadIdentity", 1, GLPmatrix);
-	
-    gluPerspective(90.0, 1.25, 3.0, 20.0);
-    glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity();
-	
     // 2 ===Logging===
     glGetFloatv(GL_MODELVIEW_MATRIX, matrixf);
     stepM(matrixf, 
                  "gluPerspective | glMatrixMode | glLoadIdentity"
                  ,2, GLPmatrix);
+
+    gluLookAt(8.0, 5.0, 7.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+
+    //3 ===Logging====
+    glGetFloatv(GL_MODELVIEW_MATRIX, matrixf);
+    stepM(matrixf, "gluLookAt", 3, GLPmatrix);
+
+
+Output:
+
+    2 : gluPerspective | glMatrixMode | glLoadIdentity
+
+    [ 1  0  0  0 ]
+    [ 0  1  0  0 ]
+    [ 0  0  1  0 ]
+    [ 0  0  0  1 ]
+
+    3 : gluLookAt
+
+    [  0.658505    -0.320318  0.681005  0 ]
+    [         0     0.904898  0.425628  0 ]
+    [ -0.752577    -0.280278   0.59588  0 ]
+    [         0  2.38419e-07  -11.7473  1 ]
 
 
 
