@@ -63,4 +63,8 @@ Output:
     [         0  2.38419e-07  -11.7473  1 ]
 
 
+At the end of the day you free glSteps objects with free_object
+
+	free_object(GLPmatrix, MATRIX);
+
 
