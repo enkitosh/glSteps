@@ -21,9 +21,9 @@ void glPrintM(float  *glMat,
 
 //  stepM - take steps with glMatrix
 // *glMat    => glMatrix provided
-//  op       => operation being performed
+// *op       => operation being performed
 //  enumStep => step nr in current sequence (silent mode = 0) 
-//  printMat => matrix preserved for printing
+// *printMat => matrix preserved for printing
 void stepM(float  *glMat, 
            char   *op,
            int    enumStep,
