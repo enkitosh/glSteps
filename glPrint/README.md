@@ -2,20 +2,6 @@ glPrint
 ========
 
 Prettyprints openGL vectors and matrices
-
-Note
-====
-
-This is a clone from VM-Print, a vector matrix printer found at:
-    
-    git clone https://github.com/enkitosh/VM-print/
-
-Usage
-=============
-
-    cd glPrint
-    
-    make
     
     
 Examples:
