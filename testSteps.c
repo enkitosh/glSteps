@@ -18,7 +18,7 @@ void display(void)
     glGetFloatv(GL_PROJECTION_MATRIX, matrixf);
 	
 
-	//1 ====Logging====
+    //1 ====Logging====
     stepM(matrixf, "glLoadIdentity", 1, GLPmatrix);
 	
     gluPerspective(90.0, 1.25, 3.0, 20.0);
@@ -39,13 +39,13 @@ void display(void)
 
     glTranslatef(5.0, 7.0, 12.0);
 
-    //7 ===Logging=====
+    //4 ===Logging=====
     glGetFloatv(GL_MODELVIEW_MATRIX, matrixf);
     stepM(matrixf, "glTranslatef", 4, GLPmatrix);
 	
     glRotatef(60.0, 1.0, 0.0, 0.0);
 
-    //8 ===Logging=====
+    //5 ===Logging=====
     glGetFloatv(GL_MODELVIEW_MATRIX, matrixf);
     stepM(matrixf, "glRotatef", 5, GLPmatrix);
 
