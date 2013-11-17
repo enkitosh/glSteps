@@ -67,4 +67,9 @@ At the end of the day you free glSteps objects with free_object
 
 	free_object(GLPmatrix, MATRIX);
 
-
+TODO:
+    Support for operation check to get more verbose printing
+    allow parameter passing with operations
+    
+    
+    
