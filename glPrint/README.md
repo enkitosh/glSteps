@@ -47,7 +47,7 @@ Print it:
 	
 Make a matrix
 	
-    matrix *matr = alloc_mat(3, 3);
+    matrix *matr = alloc_mat(3, 3, FLOAT);
 
     setValueCoord(matr, 0, 0, 3.1415926);
     setValueCoord(matr, 0, 1, 		  45);
